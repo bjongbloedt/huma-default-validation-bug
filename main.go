@@ -20,7 +20,7 @@ type Address struct {
 	CountryCode string `json:"countryCode" required:"false" minLength:"1" maxLength:"2" default:"US"`
 }
 
-func (a *Address) Resolve(_ huma.Context, prefix *huma.PathBuffer) []error {
+func (a Address) Resolve(_ huma.Context, prefix *huma.PathBuffer) []error {
 	var errors []error
 	if a.CountryCode == "US" {
 		// Test US ZipCode formatting
