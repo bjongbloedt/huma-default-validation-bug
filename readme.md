@@ -4,6 +4,8 @@ Steps to repo
 2. Note the first address that comes through works correctly and has "US" assigned
 3. Note the second address that resolves has empty string ""
 
+Same issue occurs on the struct passed into the request when looking at i.Body.Away.CountryCode
+
 ```
 http://localhost:8888/test
 
